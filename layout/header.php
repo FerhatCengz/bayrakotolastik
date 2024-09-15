@@ -15,12 +15,12 @@
         <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
         <nav id="navbar" class="navbar">
             <ul>
-                <li><a href="#get-started">İletişim</a></li>
-                <li><a href="#services">Hizmetler</a></li>
-                <li><a href="#alt-services">Hakkımızda</a></li>
-                <li><a href="#faq">S.S.S</a></li>
-                <li><a href="#projects">Öne Çıkan Ürünler</a></li>
-                <li><a href="#">Tüm Ürünler</a></li>
+                <li><a href="./#get-started">İletişim</a></li>
+                <li><a href="./#services">Hizmetler</a></li>
+                <li><a href="./#alt-services">Hakkımızda</a></li>
+                <li><a href="./#faq">S.S.S</a></li>
+                <li><a href="./#projects">Öne Çıkan Ürünler</a></li>
+                <li><a href="./#">Tüm Ürünler</a></li>
                 <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i
                 class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
