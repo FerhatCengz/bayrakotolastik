@@ -96,10 +96,13 @@
                         <form action="forms/quote.php" method="post" class="php-email-form">
 
                             <div class="row gy-3">
+                                {{ebat}}
 
                                 <div class="col-6">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="wizard" id="flexCheckChecked" checked>
+                                        <input
+                                            v-model="ebat"
+                                            class="form-check-input" type="radio" value="lastik" name="wizard" id="flexCheckChecked" checked>
                                         <label class="m-1" for="flexCheckChecked">
                                             Lastik Ebatı
                                         </label>
@@ -107,7 +110,7 @@
                                 </div>
                                 <div class="col-6">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="wizard" id="flexCheckChecked" checked>
+                                        <input class="form-check-input" type="radio" value="arac" name="wizard" id="flexCheckChecked" checked>
                                         <label class="m-1" for="flexCheckChecked">
                                             Araç Modeli
                                         </label>
@@ -424,7 +427,7 @@
         createApp({
             data() {
                 return {
-                    message: 'Hello Vue 3!'
+                    ebat: ""
                 }
             }
         }).mount('#app')
