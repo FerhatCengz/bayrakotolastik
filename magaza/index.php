@@ -376,7 +376,7 @@
 
                             <div class="col-md-12 text-center mt-5 mb-5">
                                 <button type="submit" class="w-100">
-                                    Lastik Fiyatlarını Görüntüle
+                                    Görüntüle
                                 </button>
                                 <button type="submit" class="w-100 mt-2"
                                     style="background-color: white;color:black;">
