@@ -61,7 +61,10 @@
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 
 
@@ -115,6 +118,42 @@
   </section><!-- End Hero Section -->
 
   <main id="main">
+
+    <section id="clients" class="clients">
+      <div class="container" data-aos="fade-up">
+        <header class="section-header">
+          <h2>
+            Marka Referanslarımız
+          </h2>
+        </header>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="client-logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB5fgUteF0aWDZTkOOjJ3s0obsIBhBUpMmWQ&s" class="img-fluid" alt="Emzer Grup Referanslarımız" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client-logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB5fgUteF0aWDZTkOOjJ3s0obsIBhBUpMmWQ&s" class="img-fluid" alt="Emzer Grup Referanslarımız" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client-logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB5fgUteF0aWDZTkOOjJ3s0obsIBhBUpMmWQ&s" class="img-fluid" alt="Emzer Grup Referanslarımız" />
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="client-logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB5fgUteF0aWDZTkOOjJ3s0obsIBhBUpMmWQ&s" class="img-fluid" alt="Emzer Grup Referanslarımız" />
+              </div>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <!-- <div class="swiper-pagination"></div> -->
+        </div>
+      </div>
+    </section>
 
     <!-- ======= Get Started Section ======= -->
     <section id="get-started" class="get-started section-bg">
@@ -705,7 +744,21 @@
   <!-- Template Main JS File -->
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   <script src="assets/js/main.js"></script>
-
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 1000, // 1 saniyede bir geçiş
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
 </body>
 
 </html>
