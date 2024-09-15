@@ -72,7 +72,7 @@
 
 <body>
     <!-- selam -->
-    <div id="navbarBg" class="bg-dark mt-2 container-fluid container-xl d-flex align-items-center justify-content-between" style="background-color: rgba(1, 1, 1, 0.596);">
+    <div id="navbarBg" class="mt-2 container-fluid container-xl d-flex align-items-center justify-content-between" style="background-color: rgba(1, 1, 1, 0.596);">
 
         <a href="index.html" class="logo d-flex align-items-center">
             <!-- Uncomment the line below if you also wish to use an image logo -->
