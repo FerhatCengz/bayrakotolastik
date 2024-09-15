@@ -79,7 +79,6 @@
         <!-- ======= Get Started Section ======= -->
         <section id="get-started" class="get-started section-bg">
             <div id="app" class="container">
-                {{ message }}
                 <div class="row justify-content-between gy-4">
 
                     <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
@@ -286,25 +285,103 @@
 
 
 
-                                <div class="col-md-12 text-center">
-                                    <div class="loading">Loading</div>
-                                    <div class="error-message"></div>
-                                    <div class="sent-message">Your quote request has been sent successfully. Thank you!</div>
 
-                                    <button type="submit" class="w-100">
-                                        Lastik Fiyatlarını Görüntüle
-                                    </button>
-                                    <button type="submit" class="w-100 mt-2"
-                                        style="background-color: white;color:black;">
-                                        Sıfırla
-                                    </button>
-                                </div>
+
+
 
                             </div>
+
+                            <!-- lastik ebatına göre -->
+                            <div class="row gy-3">
+
+                                <label for="mevsim">Mevsim</label>
+                                <div class="col-md-12">
+                                    <select name="mevsim" class="form-control">
+                                        <option value="">Mevsim Seçiniz</option>
+                                        <option value="1">Yaz</option>
+                                        <option value="2">Kış</option>
+                                        <option value="3">4 Mevsim</option>
+                                    </select>
+                                </div>
+
+                                <label for="kesit">Kesit Genişliği</label>
+                                <div class="col-md-12">
+                                    <select name="kesit" class="form-control">
+                                        <option value="">Kesit Seçiniz</option>
+                                        <option value="1">30</option>
+                                        <option value="2">35</option>
+                                        <option value="3">40</option>
+                                        <option value="4">45</option>
+                                        <option value="5">50</option>
+                                        <option value="6">55</option>
+                                        <option value="7">60</option>
+                                        <option value="8">65</option>
+                                        <option value="9">70</option>
+                                        <option value="10">75</option>
+                                        <option value="11">80</option>
+                                        <option value="12">85</option>
+                                    </select>
+
+                                </div>
+
+                                <label for="Kesit Oranı">Kesit Oranı</label>
+                                <div class="col-md-12">
+                                    <select name="kesit_orani" class="form-control">
+                                        <option value="">Kesit Oranı Seçiniz</option>
+                                        <option value="1">30</option>
+                                        <option value="2">35</option>
+                                        <option value="3">40</option>
+                                        <option value="4">45</option>
+                                        <option value="5">50</option>
+                                        <option value="6">55</option>
+                                        <option value="7">60</option>
+                                        <option value="8">65</option>
+                                        <option value="9">70</option>
+                                        <option value="10">75</option>
+                                        <option value="11">80</option>
+                                        <option value="12">85</option>
+                                    </select>
+                                </div>
+
+                                <label for="Jant Çapı">Jant Çapı</label>
+                                <div class="col-md-12">
+                                    <select name="jant_cap" class="form-control">
+                                        <option value="">Jant Çapı Seçiniz</option>
+                                        <option value="1">13</option>
+                                        <option value="2">14</option>
+                                        <option value="3">15</option>
+                                        <option value="4">16</option>
+                                        <option value="5">17</option>
+                                        <option value="6">18</option>
+                                        <option value="7">19</option>
+                                        <option value="8">20</option>
+                                        <option value="9">21</option>
+                                        <option value="10">22</option>
+                                        <option value="11">23</option>
+                                        <option value="12">24</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-12 text-center mt-5 mb-5">
+                                <button type="submit" class="w-100">
+                                    Lastik Fiyatlarını Görüntüle
+                                </button>
+                                <button type="submit" class="w-100 mt-2"
+                                    style="background-color: white;color:black;">
+                                    Sıfırla
+                                </button>
+                            </div>
+
                         </form>
                     </div><!-- End Quote Form -->
 
+
+                    </form>
                 </div>
+
+            </div>
 
             </div>
         </section><!-- End Get Started Section -->
