@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /admin/  # Yönetim panelini botların taramaması için
+Disallow: /wp-admin/  # Eğer bir WordPress altyapısı kullanıyorsanız
+Disallow: /login/  # Giriş sayfası taranmasın
+Disallow: /cart/  # Alışveriş sepeti sayfasını engelle
+Disallow: /checkout/  # Ödeme sayfası taranmasın
+
+Allow: /  # Ana sayfa ve diğer sayfaların taranmasına izin ver
+
+Sitemap: https://www.bayrakotolastik.com/sitemap.xml  # Sitenizin sitemap'ine giden yolu belirtiyoruz
