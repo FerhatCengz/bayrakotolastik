@@ -84,8 +84,6 @@
                     <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up">
                         <div class="content">
                             <h3>Aracınıza en uygun lastiği bulun</h3>
-                            <p>Sorularınız, önerileriniz veya randevu talepleriniz için bizimle iletişime geçin. Profesyonel ekibimiz
-                                size yardımcı olmaktan mutluluk duyacaktır.</p>
                             <b>Telefon: +905426575124</b><br>
                             <b>E-posta: bayrakotolastik@gmail.com</b>
                         </div>
@@ -96,6 +94,11 @@
                         <form action="forms/quote.php" method="post" class="php-email-form">
 
                             <div class="row gy-3">
+                                <div class="col-md-12 text-center">
+                                    <a href="./urunler">
+                                        Tüm Ürünleri Görmek İçin Tıklayınız!
+                                    </a>
+                                </div>
                                 <div class="col-6">
                                     <div class="form-check">
                                         <input
