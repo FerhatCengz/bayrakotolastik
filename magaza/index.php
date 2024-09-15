@@ -124,7 +124,7 @@
 
                             <!-- lastik ebatına göre -->
                             <div
-                                v-if="ebat == 'lastik'"
+                                v-show="ebat == 'lastik'"
                                 class="row gy-3">
 
                                 <label for="mevsim">Mevsim</label>
@@ -197,7 +197,7 @@
                             </div>
 
                             <!-- araca göre -->
-                            <div v-else class="row gy-3">
+                            <div v-show="ebat != 'lastik'" class="row gy-3">
 
                                 <label for="marka">Marka</label>
                                 <div class="col-md-12">
