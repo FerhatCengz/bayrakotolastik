@@ -65,6 +65,29 @@
 
   <!-- Swiper JS -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <style>
+    .whatsapp-float {
+      position: fixed;
+      bottom: 80px;
+      right: 20px;
+      background-color: #25d366;
+      color: #FFF;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 30px;
+      width: 60px;
+      height: 60px;
+      box-shadow: 2px 2px 3px #999;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .whatsapp-icon {
+      font-size: 30px;
+    }
+  </style>
 </head>
 
 
@@ -119,6 +142,9 @@
 
   <main id="main">
 
+    <a href="https://wa.me/905426575124" class="whatsapp-float" target="_blank">
+      <i class="fab fa-whatsapp whatsapp-icon"></i>
+    </a>
 
     <section id="services" class="services section-bg">
       <div class="container" data-aos="fade-up">
