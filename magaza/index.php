@@ -96,26 +96,105 @@
                         <form action="forms/quote.php" method="post" class="php-email-form">
 
                             <div class="row gy-3">
-                                {{ebat}}
-
                                 <div class="col-6">
                                     <div class="form-check">
                                         <input
+                                            checked
                                             v-model="ebat"
-                                            class="form-check-input" type="radio" value="lastik" name="wizard" id="flexCheckChecked" checked>
-                                        <label class="m-1" for="flexCheckChecked">
+                                            class="form-check-input" type="radio" value="lastik" name="wizard" id="flexCheckLastik">
+                                        <label class="m-1" for="flexCheckLastik">
                                             Lastik Ebatı
                                         </label>
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="radio" value="arac" name="wizard" id="flexCheckChecked" checked>
-                                        <label class="m-1" for="flexCheckChecked">
+                                        <input
+                                            v-model="ebat"
+                                            class="form-check-input" type="radio" value="arac" name="wizard" id="flexCheckArac">
+                                        <label class="m-1" for="flexCheckArac">
                                             Araç Modeli
                                         </label>
                                     </div>
                                 </div>
+                            </div>
+
+                            <!-- lastik ebatına göre -->
+                            <div
+                                v-if="ebat == 'lastik'"
+                                class="row gy-3">
+
+                                <label for="mevsim">Mevsim</label>
+                                <div class="col-md-12">
+                                    <select name="mevsim" class="form-control">
+                                        <option value="">Mevsim Seçiniz</option>
+                                        <option value="1">Yaz</option>
+                                        <option value="2">Kış</option>
+                                        <option value="3">4 Mevsim</option>
+                                    </select>
+                                </div>
+
+                                <label for="kesit">Kesit Genişliği</label>
+                                <div class="col-md-12">
+                                    <select name="kesit" class="form-control">
+                                        <option value="">Kesit Seçiniz</option>
+                                        <option value="1">30</option>
+                                        <option value="2">35</option>
+                                        <option value="3">40</option>
+                                        <option value="4">45</option>
+                                        <option value="5">50</option>
+                                        <option value="6">55</option>
+                                        <option value="7">60</option>
+                                        <option value="8">65</option>
+                                        <option value="9">70</option>
+                                        <option value="10">75</option>
+                                        <option value="11">80</option>
+                                        <option value="12">85</option>
+                                    </select>
+
+                                </div>
+
+                                <label for="Kesit Oranı">Kesit Oranı</label>
+                                <div class="col-md-12">
+                                    <select name="kesit_orani" class="form-control">
+                                        <option value="">Kesit Oranı Seçiniz</option>
+                                        <option value="1">30</option>
+                                        <option value="2">35</option>
+                                        <option value="3">40</option>
+                                        <option value="4">45</option>
+                                        <option value="5">50</option>
+                                        <option value="6">55</option>
+                                        <option value="7">60</option>
+                                        <option value="8">65</option>
+                                        <option value="9">70</option>
+                                        <option value="10">75</option>
+                                        <option value="11">80</option>
+                                        <option value="12">85</option>
+                                    </select>
+                                </div>
+
+                                <label for="Jant Çapı">Jant Çapı</label>
+                                <div class="col-md-12">
+                                    <select name="jant_cap" class="form-control">
+                                        <option value="">Jant Çapı Seçiniz</option>
+                                        <option value="1">13</option>
+                                        <option value="2">14</option>
+                                        <option value="3">15</option>
+                                        <option value="4">16</option>
+                                        <option value="5">17</option>
+                                        <option value="6">18</option>
+                                        <option value="7">19</option>
+                                        <option value="8">20</option>
+                                        <option value="9">21</option>
+                                        <option value="10">22</option>
+                                        <option value="11">23</option>
+                                        <option value="12">24</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- araca göre -->
+                            <div v-else class="row gy-3">
 
                                 <label for="marka">Marka</label>
                                 <div class="col-md-12">
@@ -294,78 +373,6 @@
 
                             </div>
 
-                            <!-- lastik ebatına göre -->
-                            <div class="row gy-3">
-
-                                <label for="mevsim">Mevsim</label>
-                                <div class="col-md-12">
-                                    <select name="mevsim" class="form-control">
-                                        <option value="">Mevsim Seçiniz</option>
-                                        <option value="1">Yaz</option>
-                                        <option value="2">Kış</option>
-                                        <option value="3">4 Mevsim</option>
-                                    </select>
-                                </div>
-
-                                <label for="kesit">Kesit Genişliği</label>
-                                <div class="col-md-12">
-                                    <select name="kesit" class="form-control">
-                                        <option value="">Kesit Seçiniz</option>
-                                        <option value="1">30</option>
-                                        <option value="2">35</option>
-                                        <option value="3">40</option>
-                                        <option value="4">45</option>
-                                        <option value="5">50</option>
-                                        <option value="6">55</option>
-                                        <option value="7">60</option>
-                                        <option value="8">65</option>
-                                        <option value="9">70</option>
-                                        <option value="10">75</option>
-                                        <option value="11">80</option>
-                                        <option value="12">85</option>
-                                    </select>
-
-                                </div>
-
-                                <label for="Kesit Oranı">Kesit Oranı</label>
-                                <div class="col-md-12">
-                                    <select name="kesit_orani" class="form-control">
-                                        <option value="">Kesit Oranı Seçiniz</option>
-                                        <option value="1">30</option>
-                                        <option value="2">35</option>
-                                        <option value="3">40</option>
-                                        <option value="4">45</option>
-                                        <option value="5">50</option>
-                                        <option value="6">55</option>
-                                        <option value="7">60</option>
-                                        <option value="8">65</option>
-                                        <option value="9">70</option>
-                                        <option value="10">75</option>
-                                        <option value="11">80</option>
-                                        <option value="12">85</option>
-                                    </select>
-                                </div>
-
-                                <label for="Jant Çapı">Jant Çapı</label>
-                                <div class="col-md-12">
-                                    <select name="jant_cap" class="form-control">
-                                        <option value="">Jant Çapı Seçiniz</option>
-                                        <option value="1">13</option>
-                                        <option value="2">14</option>
-                                        <option value="3">15</option>
-                                        <option value="4">16</option>
-                                        <option value="5">17</option>
-                                        <option value="6">18</option>
-                                        <option value="7">19</option>
-                                        <option value="8">20</option>
-                                        <option value="9">21</option>
-                                        <option value="10">22</option>
-                                        <option value="11">23</option>
-                                        <option value="12">24</option>
-                                    </select>
-                                </div>
-                            </div>
-
 
                             <div class="col-md-12 text-center mt-5 mb-5">
                                 <button type="submit" class="w-100">
@@ -427,7 +434,7 @@
         createApp({
             data() {
                 return {
-                    ebat: ""
+                    ebat: "lastik"
                 }
             }
         }).mount('#app')
